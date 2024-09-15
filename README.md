@@ -1,37 +1,60 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+[![Install](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows//install.yml/badge.svg)](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/install.yml)
+[![Format](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/format.yml/badge.svg)](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/format.yml)
+[![Lint](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/lint.yml/badge.svg)](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/lint.yml)
+[![Test](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/test.yml/badge.svg)](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/test.yml)
+## Project #1: Continuous Integration using Gitlab Actions of Python Data Science Project
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+### Directory Tree Structure 
+```
+Kaisen_Yao_IDS706_Week3_Individual/
+├── .devcontainer/
+│   ├── devcontainer.json
+│   └── Dockerfile
+├── .github/
+│   └── workflows/
+│       ├── format.yml
+│       ├── install.yml
+│       ├── lint.yml
+│       └── test.yml
+├── .gitignore
+├── Dockerfile
+├── LICENSE
+├── main.ipynb
+├── main.py
+├── Makefile
+├── mylib/
+│   ├── __init__.py
+│   └── lib.py
+├── README.md
+├── repeat.sh
+├── requirements.txt
+├── setup.sh
+├── test_lib.py
+└── test_main.py
+```
+### Purpose of Project
+The purpose of this project is to build upon the last three mini-projects to simulate best practices of continuous integration in Data Science projects. The project uses a dataset that provides an urbanization index for U.S. congressional districts. It contains details like urbanization index, rural and urban population distributions, and partisan lean.
 
+## Preparation 
+1. Open codespaces 
+2. Wait for container to be built and pinned requirements from `requirements.txt` to be installed 
+3. If running locally, `git clone` the repository and use `make install`
 
+## Check format and test errors
+1. Format code `make format`
+2. Lint code `make lint`
+3. Test code `make test`
+(Also support using code `make all`)
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+## Descriptive statistics and vizualizations
+Whenever code is pushed to the repository, the following will be automatically generated and committed via GitHub Actions:
+	•	Descriptive statistics of the dataset.
+	•	Visualizations, including:
+	•	Urbanization Index Distribution (Histogram)
+	•	Urbanization Grouping Over Time (Line Chart)
+	•	Population Distribution by District Type (Bar Chart)
+The descriptive statistics and vizualizations are generated whenever an individaul pushes to my repository via `actions-user` using `make generate_and_push`. You can find them here [descriptive statistics and vizualizations](/summary.md)
 
-Things included are:
-
-* `Makefile`
-
-* `Pytest`
-
-* `pandas`
-
-* `Ruff`:  
-
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
-
-* `Dockerfile`
-
-* `GitHub copilot`
-
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions`
-
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
-
-
-
+## References 
+	•	Python Ruff Template by nogibjj: https://github.com/nogibjj/python-ruff-template
+	•	FiveThirtyEight Urbanization Index: https://github.com/fivethirtyeight/data
