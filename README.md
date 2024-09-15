@@ -56,5 +56,5 @@ Whenever code is pushed to the repository, the following will be automatically g
 The descriptive statistics and vizualizations are generated whenever an individaul pushes to my repository via `actions-user` using `make generate_and_push`. You can find them here [descriptive statistics and vizualizations](/summary.md)
 
 ## References 
-	•	Python Ruff Template by nogibjj: https://github.com/nogibjj/python-ruff-template
-	•	FiveThirtyEight Urbanization Index: https://github.com/fivethirtyeight/data
+https://github.com/nogibjj/python-ruff-template
+https://github.com/fivethirtyeight/data
