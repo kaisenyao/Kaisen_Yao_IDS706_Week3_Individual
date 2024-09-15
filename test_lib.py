@@ -8,9 +8,6 @@ from mylib.lib import (
     return_quantile,
     return_median,
     return_std,
-    generate_histogram,
-    generate_line,
-    generate_bar,
 )
 
 dataset = "https://raw.githubusercontent.com/fivethirtyeight/data/master/district-urbanization-index-2022/urbanization-index-2022.csv"
