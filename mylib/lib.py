@@ -51,7 +51,7 @@ def generate_histogram(df, render):
         plt.savefig("urbanization_index_distribution.png")
     else:
         plt.show()
-    plt.close()  # This ensures the plot is closed after saving or rendering
+    plt.close()
 
 
 def generate_line(df, render):
@@ -67,20 +67,19 @@ def generate_line(df, render):
         plt.savefig("urbanization_groups.png")
     else:
         plt.show()
-    plt.close()  # Close plot after saving
+    plt.close()
 
 
 def generate_bar(df, render):
-    """Generate and save a bar plot for rural, suburban, and urban population distribution."""
+    """Generate and save a bar plot for the dataset"""
     avg_district_type = df[["rural", "exurban", "suburban", "urban"]].mean()
     plt.figure(figsize=(15, 6))
     avg_district_type.plot(kind="bar", color="salmon")
-    plt.title("Average Population Distribution by District Type")
+    plt.title("Average Population Distribution")
     plt.xlabel("District Type")
     plt.ylabel("Percentage of Population")
-    plt.xticks(rotation=0)
     if not render:
-        plt.savefig("district_population_distribution.png")
+        plt.savefig("district_population.png")
     else:
         plt.show()
-    plt.close()  # Close plot after saving
+    plt.close()

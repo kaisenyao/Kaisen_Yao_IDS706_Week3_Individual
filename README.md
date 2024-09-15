@@ -48,13 +48,13 @@ The purpose of this project is to build upon the last three mini-projects to sim
 
 ## Descriptive statistics and vizualizations
 Whenever code is pushed to the repository, the following will be automatically generated and committed via GitHub Actions:
-	•	Descriptive statistics of the dataset.
-	•	Visualizations, including:
-	•	Urbanization Index Distribution (Histogram)
-	•	Urbanization Grouping Over Time (Line Chart)
-	•	Population Distribution by District Type (Bar Chart)
+1. Descriptive statistics of the dataset.
+2. Visualizations, including:
+* Urbanization Index Distribution (Histogram)
+* Urbanization Grouping Over Time (Line Chart)
+* Population Distribution by District Type (Bar Chart)
 The descriptive statistics and vizualizations are generated whenever an individaul pushes to my repository via `actions-user` using `make generate_and_push`. You can find them here [descriptive statistics and vizualizations](/summary.md)
 
 ## References 
-https://github.com/nogibjj/python-ruff-template
-https://github.com/fivethirtyeight/data
+1. https://github.com/nogibjj/python-ruff-template
+2. https://github.com/fivethirtyeight/data
