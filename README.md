@@ -5,7 +5,7 @@
 ## Project #1: Continuous Integration using Gitlab Actions of Python Data Science Project
 
 ## Youtube Video Link
-[Youtube Link](https://www.youtube.com/watch?v=rPrHaqKwjWI)
+[Youtube Link](https://youtu.be/pkq37HpXZNg)
 
 ### Directory Tree Structure 
 ```
@@ -57,6 +57,7 @@ Whenever code is pushed to the repository, the following will be automatically g
 * Urbanization Index Distribution (Histogram)
 * Urbanization Grouping Over Time (Line Chart)
 * Population Distribution by District Type (Bar Chart)
+
 The descriptive statistics and vizualizations are generated whenever an individaul pushes to my repository via `actions-user` using `make generate_and_push`. You can find them here [descriptive statistics and vizualizations](/summary.md)
 
 ## References 
