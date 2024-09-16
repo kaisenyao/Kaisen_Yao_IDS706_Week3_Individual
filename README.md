@@ -4,6 +4,9 @@
 [![Test](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/test.yml/badge.svg)](https://github.com/kaisenyao/Kaisen_Yao_IDS706_Week3_Individual/actions/workflows/test.yml)
 ## Project #1: Continuous Integration using Gitlab Actions of Python Data Science Project
 
+## Youtube Video Link
+[Youtube Link](https://www.youtube.com/watch?v=rPrHaqKwjWI)
+
 ### Directory Tree Structure 
 ```
 Kaisen_Yao_IDS706_Week3_Individual/
@@ -44,7 +47,8 @@ The purpose of this project is to build upon the last three mini-projects to sim
 1. Format code `make format`
 2. Lint code `make lint`
 3. Test code `make test`
-(Also support using code `make all`)
+
+![Results](results.png)
 
 ## Descriptive statistics and vizualizations
 Whenever code is pushed to the repository, the following will be automatically generated and committed via GitHub Actions:

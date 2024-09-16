@@ -79,7 +79,7 @@ def generate_bar(df, render):
     plt.xlabel("District Type")
     plt.ylabel("Percentage of Population")
     if not render:
-        plt.savefig("district_population.png")
+        plt.savefig("district_population_distribution.png")
     else:
         plt.show()
     plt.close()
